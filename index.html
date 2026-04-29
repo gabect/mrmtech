@@ -3,6 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>MR. M Tech Class</title>
+  <link rel="stylesheet" href="style.css?v=20260429">
+</head>
+<body>
+  <aside class="side-menu" aria-label="Main navigation">
+    <div class="menu-brand">MR.<span>M</span></div>
   <title>MR. M Tech Class</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -80,6 +89,17 @@
   </main>
 
   <script>
+
+    // Keep GitHub Pages content fresh by checking for a new build stamp.
+    const BUILD_STAMP = "2026-04-29T00:00:00Z";
+    const savedStamp = localStorage.getItem('mrm_build_stamp');
+    if (savedStamp && savedStamp !== BUILD_STAMP) {
+      window.location.replace(`${window.location.pathname}?v=${Date.now()}`);
+    }
+    localStorage.setItem('mrm_build_stamp', BUILD_STAMP);
+
+    // Always request latest HTML in the background.
+    fetch(window.location.pathname, { cache: 'no-store' }).catch(() => {});
     const links = document.querySelectorAll('.side-menu a');
     const sections = [...links].map(link => document.querySelector(link.getAttribute('href')));
 
