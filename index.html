@@ -7,109 +7,107 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>MR. M Tech Class</title>
-  <link rel="stylesheet" href="style.css?v=20260429">
+  <link rel="stylesheet" href="style.css?v=20260430">
 </head>
 <body>
-  <aside class="side-menu" aria-label="Main navigation">
-    <div class="menu-brand">
-      <img src="logo.svg" alt="MR. M Tech Class logo" class="menu-logo">
-      <span>MR.<em>M</em></span>
-    </div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#bio">Bio</a>
-      <a href="#class-description">Class</a>
-      <a href="#grades">Grades</a>
-    </nav>
-  </aside>
-
-  <main class="content">
-    <section id="home" class="hero parallax-layer">
-      <div class="hero-badge">TECH CLASS • BUILD • CODE • CREATE</div>
-      <h1>Welcome to MR. M Tech Class</h1>
-      <p>
-        A hands-on technology class where students build confidence through coding,
-        design, robotics, and digital citizenship.
-      </p>
-      <div class="hero-actions">
-        <a class="btn" href="#grades">Explore Grade Levels</a>
-        <a class="btn btn-ghost" href="#class-description">Class Overview</a>
+  <div class="page-shell">
+    <aside class="side-menu" aria-label="Main navigation">
+      <div class="menu-brand">
+        <img src="img/logomrm.png" alt="MRM Tech logo">
       </div>
-    </section>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#bio">Bio</a>
+        <a href="#class-description">Class</a>
+        <a href="#grades">Grades</a>
+      </nav>
+    </aside>
 
-    <section id="bio" class="panel">
-      <h2>Teacher Bio</h2>
-      <p>
-        Hi! I’m Mr. M. I help students become thoughtful creators with technology.
-        My classroom focuses on problem-solving, collaboration, and creativity,
-        giving every student a chance to practice real-world tech skills in a
-        supportive environment.
-      </p>
-    </section>
+    <main class="content">
+      <section id="home" class="hero parallax-layer">
+        <div class="hero-badge">TECH CLASS • BUILD • CODE • CREATE</div>
+        <h1>Welcome to MR. M Tech Class</h1>
+        <p>
+          A hands-on technology class where students build confidence through coding,
+          design, robotics, and digital citizenship.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#grades">Explore Grade Levels</a>
+          <a class="btn btn-ghost" href="#class-description">Class Overview</a>
+        </div>
+      </section>
 
-    <section id="class-description" class="panel panel-highlight">
-      <h2>Class Description</h2>
-      <p>
-        Students learn the foundations of computer science and digital making.
-        Projects include block coding, beginning web development, multimedia
-        production, and design challenges that connect to everyday life. We
-        emphasize responsible technology use, growth mindset, and teamwork.
-      </p>
-    </section>
+      <section id="bio" class="panel">
+        <h2>Teacher Bio</h2>
+        <p>
+          Hi! I’m Mr. M. I help students become thoughtful creators with technology.
+          My classroom focuses on problem-solving, collaboration, and creativity,
+          giving every student a chance to practice real-world tech skills in a
+          supportive environment.
+        </p>
+      </section>
 
-    <section id="grades" class="panel">
-      <h2>Grade Level Hubs</h2>
-      <div class="grades">
-        <article class="card">
-          <h3>5th Grade</h3>
-          <p>Intro to coding, keyboarding fluency, and digital citizenship basics.</p>
-          <a href="5th-grade/" class="card-link">Go to 5th Grade</a>
-        </article>
+      <section id="class-description" class="panel panel-highlight">
+        <h2>Class Description</h2>
+        <p>
+          Students learn the foundations of computer science and digital making.
+          Projects include block coding, beginning web development, multimedia
+          production, and design challenges that connect to everyday life. We
+          emphasize responsible technology use, growth mindset, and teamwork.
+        </p>
+      </section>
 
-        <article class="card">
-          <h3>6th Grade</h3>
-          <p>Creative projects in coding, design, and beginner hardware systems.</p>
-          <a href="6th-grade/" class="card-link">Go to 6th Grade</a>
-        </article>
+      <section id="grades" class="panel">
+        <h2>Grade Level Hubs</h2>
+        <div class="grades">
+          <article class="card">
+            <h3>5th Grade</h3>
+            <p>Intro to coding, keyboarding fluency, and digital citizenship basics.</p>
+            <a href="5th-grade/" class="card-link">Go to 5th Grade</a>
+          </article>
 
-        <article class="card">
-          <h3>8th Grade</h3>
-          <p>Advanced challenges with web development, circuits, and innovation.</p>
-          <a href="8th-grade/" class="card-link">Go to 8th Grade</a>
-        </article>
-      </div>
-    </section>
+          <article class="card">
+            <h3>6th Grade</h3>
+            <p>Creative projects in coding, design, and beginner hardware systems.</p>
+            <a href="6th-grade/" class="card-link">Go to 6th Grade</a>
+          </article>
 
-    <footer class="site-footer">
-      <p>© 2026 MR. M Tech Class</p>
-    </footer>
-  </main>
+          <article class="card">
+            <h3>8th Grade</h3>
+            <p>Advanced challenges with web development, circuits, and innovation.</p>
+            <a href="8th-grade/" class="card-link">Go to 8th Grade</a>
+          </article>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <p>© 2026 MR. M Tech Class</p>
+      </footer>
+    </main>
+  </div>
 
   <script>
-
-    // Keep GitHub Pages content fresh by checking for a new build stamp.
-    const BUILD_STAMP = "2026-04-29T00:00:00Z";
+    const BUILD_STAMP = "2026-04-30T00:00:00Z";
     const savedStamp = localStorage.getItem('mrm_build_stamp');
     if (savedStamp && savedStamp !== BUILD_STAMP) {
       window.location.replace(`${window.location.pathname}?v=${Date.now()}`);
     }
     localStorage.setItem('mrm_build_stamp', BUILD_STAMP);
 
-    // Always request latest HTML in the background.
     fetch(window.location.pathname, { cache: 'no-store' }).catch(() => {});
     const links = document.querySelectorAll('.side-menu a');
-    const sections = [...links].map(link => document.querySelector(link.getAttribute('href')));
+    const sections = [...links].map((link) => document.querySelector(link.getAttribute('href')));
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return;
-        links.forEach(link => link.classList.remove('active'));
+        links.forEach((link) => link.classList.remove('active'));
         const active = document.querySelector(`.side-menu a[href="#${entry.target.id}"]`);
         if (active) active.classList.add('active');
       });
     }, { threshold: 0.45 });
 
-    sections.forEach(section => section && observer.observe(section));
+    sections.forEach((section) => section && observer.observe(section));
 
     window.addEventListener('scroll', () => {
       const y = window.scrollY * 0.2;
