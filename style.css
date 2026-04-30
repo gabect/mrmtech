@@ -45,14 +45,30 @@ body {
 }
 
 .menu-brand {
-  font-size: 1.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 1.2rem;
   font-weight: 800;
   letter-spacing: 0.08em;
   margin-bottom: 2rem;
 }
 
+.menu-logo {
+  width: 44px;
+  height: 44px;
+  flex: 0 0 auto;
+  border-radius: 0.4rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
 .menu-brand span {
+  color: var(--cream);
+}
+
+.menu-brand em {
   color: var(--gold);
+  font-style: normal;
 }
 
 .side-menu nav {
@@ -193,7 +209,12 @@ h2 {
 
   .menu-brand {
     margin-bottom: 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+
+  .menu-logo {
+    width: 36px;
+    height: 36px;
   }
 
   .side-menu nav {
